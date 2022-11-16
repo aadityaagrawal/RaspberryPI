@@ -8,6 +8,8 @@ os.system('modprobe w1-therm')
 base_dir = 'sys/bus/w1/devices/'
 device_dir = glob.glob(base_dir + "28*")[0]
 device_file = device_dir + 'w1_slave'
+logging_file = "Path_of_media"
+
 
 def read_temp_script () :
     f = open(device_file,'r')
@@ -33,6 +35,11 @@ def read ():
         print (read_temp())
         time.sleep(1)
          
-
+def log_temp():
+    c,f = read_temp()
+    f = open(logging_file, 'a')
+    f.write(str(c)+ " " +str(f))
+    f.close()
+    
 
 
