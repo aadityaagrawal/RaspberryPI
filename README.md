@@ -21,3 +21,9 @@ This Repository contain the code of all the programs which i learned during Rasp
 #### Working of SR-04 :
 Trig require 5V for 10 microsecond to generate ultrasonic waves and generate 8 ultrasonic waves. When the waves strikes an object it reflect back the ultrasonic waves which was received by echo that measure how long it ultrasonic waves take to return back. It then sends all the information to the micro controller which divides the time by 2 and multiple it the speed of ultrasonic sound wave to calculate how far the object is from the sensor. 
  
+
+### CherryPy :
+
+CherryPy is an open source library which we can use to create instant web page. Infact it is one of the oldest library avaliable in python for web development. It is not that much popular because it don't have seperate code for front end and back end unlike modern language like mongoDB, flask etc.
+
+By using CherryPy one can create a static web page rapidly without coding much and save their time.
