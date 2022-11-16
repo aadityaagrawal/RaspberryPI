@@ -17,6 +17,7 @@ This Repository contain the code of all the programs which i learned during Rasp
 2. It can measure distance from 2 cm upto 400 cm with an accuracy of 0.5 micrometer.
 3. It have 4 pins vout, trig, echo and ground.
 4. vout is used for voltage transfer, trig is used to transmit ultrasonic waves, echo is used to receive reflected ultrasonic sound waves.
-Working :
+
+#### Working of SR-04 :
 Trig require 5V for 10 microsecond to generate ultrasonic waves and generate 8 ultrasonic waves. When the waves strikes an object it reflect back the ultrasonic waves which was received by echo that measure how long it ultrasonic waves take to return back. It then sends all the information to the micro controller which divides the time by 2 and multiple it the speed of ultrasonic sound wave to calculate how far the object is from the sensor. 
  
